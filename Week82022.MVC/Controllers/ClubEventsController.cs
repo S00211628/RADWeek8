@@ -14,39 +14,6 @@ namespace Week82022.MVC.Controllers
 
         ClubModels.ClubsContext db = new ClubModels.ClubsContext();
 
-        // GET: ClubEvents
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
-
-        //public async Task<ActionResult> AllClubDetails(string ClubName = null)
-        //{
-        //    ActivityAPIClient.Track(StudentID: "S00211628", StudentName: "Martin Melody", activityName: "RAD 301 Lab 2022", Task: "Implementing All Club Detail Filter Action");
-
-        //    ViewBag.cname = ClubName;
-        //    var fullClub = db.Clubs
-        //        .Where(c => ClubName == null || c.ClubName.StartsWith(ClubName))
-        //        .ToListAsync();
-        //    return View(await fullClub);
-        //}
-
-        //private List<SelectListItem> FillClubs()
-        //{
-        //    List<SelectListItem> items = new List<SelectListItem>();
-        //    {
-        //        var clubs = db.Clubs.ToList();
-        //        foreach (var item in clubs)
-        //            items.Add(new SelectListItem()
-        //            {
-        //                Value = item.ClubId.ToString(),
-        //                Text = item.ClubName
-        //            });
-        //    }
-        //    return items;
-        //}
-
-
         private List<SelectListItem> FillClubs()
         {
             List<SelectListItem> items = new List<SelectListItem>();
@@ -65,7 +32,7 @@ namespace Week82022.MVC.Controllers
             ActivityAPIClient.Track(StudentID: "S00211628",
                 StudentName: "Martin Melody",
                 activityName: "RAD 301 Lab 2022",
-                Task: "Implementing Club Filter Dropdown box");
+                Task: "Implementing Partial View");
 
             List<SelectListItem> items = FillClubs();
             items.First().Selected = true;

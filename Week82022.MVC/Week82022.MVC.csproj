@@ -191,6 +191,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\ClubEvents\AllClubDetails.cshtml" />
     <Content Include="Views\ClubEvents\Index.cshtml" />
+    <Content Include="Views\ClubEvents\_ClubEvents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
