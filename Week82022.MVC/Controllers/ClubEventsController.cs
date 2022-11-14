@@ -31,22 +31,41 @@ namespace Week82022.MVC.Controllers
         //    return View(await fullClub);
         //}
 
+        //private List<SelectListItem> FillClubs()
+        //{
+        //    List<SelectListItem> items = new List<SelectListItem>();
+        //    {
+        //        var clubs = db.Clubs.ToList();
+        //        foreach (var item in clubs)
+        //            items.Add(new SelectListItem()
+        //            {
+        //                Value = item.ClubId.ToString(),
+        //                Text = item.ClubName
+        //            });
+        //    }
+        //    return items;
+        //}
+
+
         private List<SelectListItem> FillClubs()
         {
             List<SelectListItem> items = new List<SelectListItem>();
-            var clubs = db.Clubs.ToList();
-            foreach (var item in clubs)
-                items.Add(new SelectListItem()
-                {
-                    Value = item.ClubId.ToString(),
-                    Text = item.ClubName
-                });
+            {
+                var clubs = db.Clubs.ToList();
+                foreach (var item in clubs)
+                    items.Add(new SelectListItem()
+                    { Value = item.ClubId.ToString(), Text = item.ClubName });
+            }
             return items;
         }
 
+
         public ActionResult Index()
         {
-            ActivityAPIClient.Track(StudentID: "S00211628", StudentName: "Martin Melody", activityName: "RAD 301 Lab 2022", Task: "Implementing Club Filter Dropdown box");
+            ActivityAPIClient.Track(StudentID: "S00211628",
+                StudentName: "Martin Melody",
+                activityName: "RAD 301 Lab 2022",
+                Task: "Implementing Club Filter Dropdown box");
 
             List<SelectListItem> items = FillClubs();
             items.First().Selected = true;
