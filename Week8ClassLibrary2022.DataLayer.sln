@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week8ClassLibrary2022.DataLayer", "Week8ClassLibrary2022.DataLayer\Week8ClassLibrary2022.DataLayer.csproj", "{C3E2AFCD-00FE-4C5C-BC08-A1772093410E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week82022.MVC", "Week82022.MVC\Week82022.MVC.csproj", "{09177C9F-1E7C-4C2C-BDCD-CD590DD2AAA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C3E2AFCD-00FE-4C5C-BC08-A1772093410E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3E2AFCD-00FE-4C5C-BC08-A1772093410E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3E2AFCD-00FE-4C5C-BC08-A1772093410E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09177C9F-1E7C-4C2C-BDCD-CD590DD2AAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09177C9F-1E7C-4C2C-BDCD-CD590DD2AAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09177C9F-1E7C-4C2C-BDCD-CD590DD2AAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09177C9F-1E7C-4C2C-BDCD-CD590DD2AAA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
